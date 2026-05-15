@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dolce Vita Inmobiliaria - Soluciones de nuda propiedad y usufructo vitalicio para mayores de 65 años. Monetiza tu vivienda sin renunciar a tu hogar.">
+    <meta name="theme-color" content="#b8860b">
+    <title>Dolce Vita Inmobiliaria | Nuda Propiedad y Soluciones Senior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        // Replace G-XXXXXXXXXX with your actual Google Analytics ID
+        // gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .bg-gold-gradient { background: linear-gradient(135deg, #b8860b 0%, #daa520 100%); }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .mobile-menu.active {
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <span class="text-2xl font-bold text-amber-700 tracking-tighter uppercase serif italic">Dolce Vita</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-slate-600">
+                    <a href="#inicio" class="hover:text-amber-700 transition-colors">Inicio</a>
+                    <a href="#mayores" class="hover:text-amber-700 transition-colors">Mayores</a>
+                    <a href="#inversores" class="hover:text-amber-700 transition-colors">Inversores</a>
+                    <a href="#gastos" class="hover:text-amber-700 transition-colors">Gastos</a>
+                    <a href="#contacto" class="bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800 transition-all transform hover:scale-105">Tasación Gratis</a>
+                </div>
+                <div class="md:hidden text-amber-700 font-bold">
+                    <button id="menu-btn" class="text-2xl p-2 focus:outline-none focus:ring-2 focus:ring-amber-700 rounded" aria-label="Abrir menú">☰</button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden flex flex-col space-y-4 pb-4">
+                <a href="#inicio" class="hover:text-amber-700 transition-colors">Inicio</a>
+                <a href="#mayores" class="hover:text-amber-700 transition-colors">Mayores</a>
+                <a href="#inversores" class="hover:text-amber-700 transition-colors">Inversores</a>
+                <a href="#gastos" class="hover:text-amber-700 transition-colors">Gastos</a>
+                <a href="#contacto" class="bg-amber-700 text-white px-5 py-2 rounded-full hover:bg-amber-800 transition-all inline-block">Tasación Gratis</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- [1.0] HERO SECTION - Segmentación Bifurcada -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=2000" alt="Hogar acogedor" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 max-w-4xl mx-auto leading-tight">
+                Haz líquida tu vivienda sin renunciar a tu <span class="italic text-amber-400">hogar</span>.
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 text-slate-200 max-w-2xl mx-auto font-light">
+                La solución financiera ética para mayores de 65 años y una oportunidad de inversión segura y rentable.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#mayores" class="bg-white text-slate-900 px-10 py-5 rounded-xl font-bold text-lg hover:bg-amber-50 transition-all transform hover:-translate-y-1 shadow-2xl">
+                    👵 Soy Propietario <span class="block text-sm font-normal text-slate-600">Quiero liquidez inmediata</span>
+                </a>
+                <a href="#inversores" class="bg-amber-700 text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-amber-800 transition-all transform hover:-translate-y-1 shadow-2xl">
+                    💼 Soy Inversor <span class="block text-sm font-normal text-amber-200">Ver catálogo con descuento</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- [2.0] EL CONCEPTO - Desmembramiento del Dominio -->
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <span class="text-amber-700 font-bold tracking-widest uppercase text-sm">Transparencia Jurídica</span>
+            <h2 class="text-4xl font-bold mt-4 mb-16">El Desmembramiento del Dominio</h2>
+            <div class="grid md:grid-cols-3 items-center gap-8">
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm">
+                    <div class="text-4xl mb-4 italic serif font-bold text-slate-300">01</div>
+                    <h3 class="text-xl font-bold mb-3">Pleno Dominio</h3>
+                    <p class="text-slate-600 text-sm italic">"La propiedad total del inmueble antes de la operación."</p>
+                </div>
+                <div class="text-4xl text-amber-600 font-light">=</div>
+                <div class="grid gap-4">
+                    <div class="p-6 bg-amber-50 rounded-2xl border-l-4 border-amber-600 shadow-md">
+                        <h3 class="text-lg font-bold text-amber-900">Usufructo Vitalicio</h3>
+                        <p class="text-sm text-amber-800">Uso y disfrute de la vivienda para toda la vida del vendedor.</p>
+                    </div>
+                    <div class="text-2xl font-light text-slate-400">+</div>
+                    <div class="p-6 bg-slate-800 rounded-2xl border-l-4 border-slate-400 shadow-md">
+                        <h3 class="text-lg font-bold text-white">Nuda Propiedad</h3>
+                        <p class="text-sm text-slate-300">La titularidad legal del inmueble que adquiere el inversor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [3.0] SOLUCIONES PARA MAYORES -->
+    <section id="mayores" class="py-24 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-16">
+                <div class="max-w-2xl">
+                    <span class="text-amber-700 font-bold uppercase tracking-widest text-sm">Para Vendedores</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-4 italic">Seguridad y bienestar financiero en la jubilación.</h2>
+                </div>
+                <p class="text-slate-500 mt-4 md:mt-0 max-w-sm italic">Monetiza tu ahorro de toda la vida sin moverte de casa.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-600 transition-colors">
+                        <svg class="w-8 h-8 text-amber-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 italic">Venta con Pago Único</h3>
+                    <p class="text-slate-600 mb-6">Recibe el capital total por la nuda propiedad en el momento de la firma ante Notario. Ideal para cancelar deudas o ayudar a la familia.</p>
+                    <ul class="text-sm space-y-2 text-slate-500 mb-8">
+                        <li class="flex items-center">✓ Máxima liquidez inmediata</li>
+                        <li class="flex items-center">✓ Sin impuestos para >65 años</li>
+                    </ul>
+                    <a href="#contacto" class="text-amber-700 font-bold flex items-center hover:translate-x-2 transition-transform">Saber más →</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-amber-700 text-white text-[10px] font-bold px-4 py-1 uppercase tracking-widest">Recomendado</div>
+                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-600 transition-colors">
+                        <svg class="w-8 h-8 text-amber-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 italic">Renta Vitalicia</h3>
+                    <p class="text-slate-600 mb-6">Convierte tu casa en un sueldo mensual asegurado para siempre. Disfruta de una jubilación de lujo sin preocupaciones.</p>
+                    <ul class="text-sm space-y-2 text-slate-500 mb-8">
+                        <li class="flex items-center">✓ Ingresos mensuales de por vida</li>
+                        <li class="flex items-center">✓ Garantía hipotecaria notarial</li>
+                    </ul>
+                    <a href="#contacto" class="text-amber-700 font-bold flex items-center hover:translate-x-2 transition-transform">Saber más →</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-10 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-600 transition-colors">
+                        <svg class="w-8 h-8 text-amber-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 italic">Renta Residencial</h3>
+                    <p class="text-slate-600 mb-6">Vende la nuda propiedad para financiar una residencia de mayores de alta gama, manteniendo el control de tus activos.</p>
+                    <ul class="text-sm space-y-2 text-slate-500 mb-8">
+                        <li class="flex items-center">✓ Doble renta si alquilas tu piso</li>
+                        <li class="flex items-center">✓ Gestión integral del proceso</li>
+                    </ul>
+                    <a href="#contacto" class="text-amber-700 font-bold flex items-center hover:translate-x-2 transition-transform">Saber más →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [4.0] CANAL INVERSORES -->
+    <section id="inversores" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-16">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl font-bold italic mb-4 text-amber-400">Inversión con Propósito.</h2>
+                    <p class="text-slate-400 text-lg">Accede a activos inmobiliarios prime con descuentos de hasta el 50% por desmembramiento de dominio.</p>
+                </div>
+                <button class="mt-8 md:mt-0 border border-amber-400 text-amber-400 px-8 py-3 rounded-full hover:bg-amber-400 hover:text-slate-900 transition-all uppercase tracking-widest font-bold text-xs">
+                    Ver Catálogo VIP
+                </button>
+            </div>
+
+            <!-- Catálogo Simulado -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Propiedad 1 -->
+                <div class="bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 group cursor-pointer">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" alt="Apartamento Madrid" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-amber-600 px-3 py-1 rounded-full text-xs font-bold">-45% Dto.</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold italic">Barrio de Salamanca, Madrid</h3>
+                                <p class="text-slate-400 text-sm">Piso 120m² • Exterior</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-slate-700/50 p-3 rounded-xl">
+                                <span class="text-[10px] uppercase text-slate-400 block mb-1">Precio Compra</span>
+                                <span class="text-xl font-bold text-amber-400">315.000€</span>
+                            </div>
+                            <div class="bg-slate-700/50 p-3 rounded-xl">
+                                <span class="text-[10px] uppercase text-slate-400 block mb-1">Val. Mercado</span>
+                                <span class="text-xl font-bold">580.000€</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center text-sm text-slate-400 border-t border-slate-700 pt-4">
+                            <svg class="w-4 h-4 mr-2 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"></path></svg>
+                            Usufructuario: Mujer 81 años
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Propiedad 2 -->
+                <div class="bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 group cursor-pointer">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=800" alt="Casa Barcelona" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-amber-600 px-3 py-1 rounded-full text-xs font-bold">-38% Dto.</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold italic">Sant Gervasi, Barcelona</h3>
+                                <p class="text-slate-400 text-sm">Ático Terraza • 95m²</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-slate-700/50 p-3 rounded-xl">
+                                <span class="text-[10px] uppercase text-slate-400 block mb-1">Precio Compra</span>
+                                <span class="text-xl font-bold text-amber-400">285.200€</span>
+                            </div>
+                            <div class="bg-slate-700/50 p-3 rounded-xl">
+                                <span class="text-[10px] uppercase text-slate-400 block mb-1">Val. Mercado</span>
+                                <span class="text-xl font-bold">460.000€</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center text-sm text-slate-400 border-t border-slate-700 pt-4">
+                            <svg class="w-4 h-4 mr-2 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"></path></svg>
+                            Usufructuario: Hombre 79 años
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Propiedad 3 -->
+                <div class="bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 group cursor-pointer">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=800" alt="Vila Valencia" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-amber-600 px-3 py-1 rounded-full text-xs font-bold">-52% Dto.</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold italic">Playa de San Juan, Alicante</h3>
+                                <p class="text-slate-400 text-sm">Chalet Independiente • 210m²</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-slate-700/50 p-3 rounded-xl">
+                                <span class="text-[10px] uppercase text-slate-400 block mb-1">Precio Compra</span>
+                                <span class="text-xl font-bold text-amber-400">190.000€</span>
+                            </div>
+                            <div class="bg-slate-700/50 p-3 rounded-xl">
+                                <span class="text-[10px] uppercase text-slate-400 block mb-1">Val. Mercado</span>
+                                <span class="text-xl font-bold">395.000€</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center text-sm text-slate-400 border-t border-slate-700 pt-4">
+                            <svg class="w-4 h-4 mr-2 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"></path></svg>
+                            Usufructuario: Mujer 87 años
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [5.1] MATRIZ DE GASTOS -->
+    <section id="gastos" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold italic mb-6">¿Quién paga qué?</h2>
+                <p class="text-slate-600">Transparencia total en el reparto de gastos según el Código Civil.</p>
+            </div>
+            
+            <div class="overflow-x-auto shadow-2xl rounded-3xl border border-slate-100">
+                <table class="w-full text-left">
+                    <thead class="bg-slate-900 text-white">
+                        <tr>
+                            <th class="px-6 py-4 font-bold uppercase text-xs tracking-widest">Concepto de Gasto</th>
+                            <th class="px-6 py-4 font-bold uppercase text-xs tracking-widest">Responsable</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-6">
+                                <span class="font-bold block text-slate-800">IBI (Impuesto sobre Bienes Inmuebles)</span>
+                                <span class="text-xs text-slate-400 italic">Impuesto de titularidad del activo</span>
+                            </td>
+                            <td class="px-6 py-6">
+                                <span class="inline-block bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-xs font-bold uppercase">💼 Nudo Propietario</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-6">
+                                <span class="font-bold block text-slate-800">Cuotas Ordinarias Comunidad</span>
+                                <span class="text-xs text-slate-400 italic">Gastos por el uso diario y servicios</span>
+                            </td>
+                            <td class="px-6 py-6">
+                                <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-bold uppercase">👵 Usufructuario</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-6">
+                                <span class="font-bold block text-slate-800">Derramas Extraordinarias</span>
+                                <span class="text-xs text-slate-400 italic">Mejoras estructurales (ascensor, fachada)</span>
+                            </td>
+                            <td class="px-6 py-6">
+                                <span class="inline-block bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-xs font-bold uppercase">💼 Nudo Propietario</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition-colors">
+                            <td class="px-6 py-6">
+                                <span class="font-bold block text-slate-800">Suministros (Luz, Agua, Gas)</span>
+                                <span class="text-xs text-slate-400 italic">Consumos individuales del habitante</span>
+                            </td>
+                            <td class="px-6 py-6">
+                                <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-bold uppercase">👵 Usufructuario</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- [7.0] CONTACTO / SIMULADOR -->
+    <section id="contacto" class="py-24 bg-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-5xl font-bold italic mb-8">Solicita tu valoración personalizada sin compromiso.</h2>
+                    <p class="text-xl text-slate-600 mb-8">Nuestros expertos analizarán tu caso particular (edad, ubicación y estado) para ofrecerte la mejor oferta del mercado.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-amber-600 p-3 rounded-full text-white">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <span class="text-2xl font-bold italic">900 123 456</span>
+                        </div>
+                        <p class="text-sm text-slate-400 italic">Atención personalizada • Trato humano • Máxima confidencialidad</p>
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="bg-white p-12 rounded-[40px] shadow-2xl border border-amber-100">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Nombre</label>
+                                <input type="text" id="name" name="name" class="w-full bg-slate-50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-amber-500 transition-all" placeholder="Juan García" required aria-label="Tu nombre completo">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" class="w-full bg-slate-50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-amber-500 transition-all" placeholder="600 000 000" required aria-label="Tu teléfono de contacto">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="city" class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Ciudad del inmueble</label>
+                            <input type="text" id="city" name="city" class="w-full bg-slate-50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-amber-500 transition-all" placeholder="Madrid, Barcelona..." required aria-label="Ciudad donde se encuentra tu inmueble">
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label for="age" class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Edad del Propietario</label>
+                                <select id="age" name="age" class="w-full bg-slate-50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-amber-500 transition-all" required aria-label="Rango de edad del propietario">
+                                    <option value="">Selecciona un rango</option>
+                                    <option value="65-70">65 - 70 años</option>
+                                    <option value="71-80">71 - 80 años</option>
+                                    <option value="80+">Más de 80 años</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="modality" class="block text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">Modalidad</label>
+                                <select id="modality" name="modality" class="w-full bg-slate-50 border-0 rounded-xl p-4 focus:ring-2 focus:ring-amber-500 transition-all" required aria-label="Tipo de modalidad que prefieres">
+                                    <option value="">Selecciona una modalidad</option>
+                                    <option value="pago-unico">Pago Único</option>
+                                    <option value="renta-vitalicia">Renta Vitalicia</option>
+                                    <option value="no-seguro">No estoy seguro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-700 text-white font-bold py-5 rounded-2xl hover:bg-amber-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 uppercase tracking-widest">
+                            Solicitar Estudio Gratuito
+                        </button>
+                        <p class="text-[10px] text-center text-slate-400">Al solicitar información, aceptas nuestra <a href="/privacy" class="text-amber-700 hover:underline">política de privacidad</a> y tratamiento de datos para fines de asesoramiento inmobiliario.</p>
+                        <div id="form-message" class="hidden p-4 rounded-xl text-center text-sm font-medium"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-500 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <span class="text-2xl font-bold text-white italic serif mb-6 block">Dolce Vita Inmobiliaria</span>
+                    <p class="max-w-md">Líderes en la gestión ética del desmembramiento del dominio en España. Ayudamos a nuestros mayores a vivir con la dignidad y tranquilidad financiera que merecen.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Secciones</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="/seller-guide" class="hover:text-amber-400 transition-colors">Guía del Vendedor</a></li>
+                        <li><a href="/vip-investors" class="hover:text-amber-400 transition-colors">Inversores VIP</a></li>
+                        <li><a href="/calculator" class="hover:text-amber-400 transition-colors">Calculadora Actuarial</a></li>
+                        <li><a href="/faq" class="hover:text-amber-400 transition-colors">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Legal</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="/legal" class="hover:text-amber-400 transition-colors">Aviso Legal</a></li>
+                        <li><a href="/privacy" class="hover:text-amber-400 transition-colors">Política de Privacidad</a></li>
+                        <li><a href="/cookies" class="hover:text-amber-400 transition-colors">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-xs">© 2026 Dolce Vita Inmobiliaria. Todos los derechos reservados.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <span class="text-xs uppercase tracking-tighter">Seguridad Notarial Garantizada</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner (placeholder) -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-4 shadow-lg z-40 hidden">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <p class="text-sm">Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra política.</p>
+            <button id="accept-cookies" class="bg-amber-700 hover:bg-amber-800 px-6 py-2 rounded-full text-sm font-bold ml-4">Aceptar</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Form Submission Handler
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Collect form data
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                city: document.getElementById('city').value,
+                age: document.getElementById('age').value,
+                modality: document.getElementById('modality').value,
+                timestamp: new Date().toISOString()
+            };
+
+            // Show success message
+            formMessage.classList.remove('hidden');
+            formMessage.classList.add('bg-green-100', 'text-green-800');
+            formMessage.textContent = '✓ ¡Gracias! Tu solicitud ha sido enviada. Nos pondremos en contacto en breve.';
+
+            // Log to console (replace with actual API call)
+            console.log('Form submission:', formData);
+
+            // Track event in Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submission', {
+                    'form_type': 'contact_form',
+                    'age_range': formData.age,
+                    'modality': formData.modality
+                });
+            }
+
+            // Reset form after 2 seconds
+            setTimeout(() => {
+                contactForm.reset();
+                formMessage.classList.add('hidden');
+                formMessage.classList.remove('bg-green-100', 'text-green-800');
+            }, 2000);
+        });
+
+        // Cookie Banner
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptCookiesBtn = document.getElementById('accept-cookies');
+
+        // Show cookie banner if not previously accepted
+        if (!localStorage.getItem('cookies-accepted')) {
+            cookieBanner.classList.remove('hidden');
+        }
+
+        acceptCookiesBtn.addEventListener('click', function() {
+            localStorage.setItem('cookies-accepted', 'true');
+            cookieBanner.classList.add('hidden');
+        });
+
+        // Smooth scroll behavior for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
